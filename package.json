@@ -4,7 +4,8 @@
   "description": "Exercises from Advent of Code 2021",
   "main": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "serve-coverage": "cd coverage && python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,12 @@
     "jest": "^27.4.3"
   },
   "jest": {
-    "maxWorkers": 1
+    "maxWorkers": 1,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text",
+      "json",
+      "html"
+    ]
   }
 }
