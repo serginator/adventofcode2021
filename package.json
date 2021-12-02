@@ -18,5 +18,8 @@
   "homepage": "https://github.com/serginator/adventofcode21#readme",
   "devDependencies": {
     "jest": "^27.4.3"
+  },
+  "jest": {
+    "maxWorkers": 1
   }
 }
