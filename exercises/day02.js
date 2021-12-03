@@ -8,7 +8,7 @@ const input = require('../inputs/day02.input').input;
     down 5 adds the submarine 5 depth positions
     up 5 removes the submarine 5 depth positions
 */
-function getMultiplicationOfFinalPositionOfSubmarine(listOfMovements) {
+function getPositionOfTheSubmarine(listOfMovements) {
     let pos = [0, 0];
     for (let i = 0; i < listOfMovements.length; i++) {
         const movement = listOfMovements[i].split(' ');
@@ -22,7 +22,6 @@ function getMultiplicationOfFinalPositionOfSubmarine(listOfMovements) {
     }
     return pos[0] * pos[1];
 }
-console.log('Solution of day 02, first exercise is: ' + getMultiplicationOfFinalPositionOfSubmarine(input));
 
 /**
     A submarine starts in pos [0,0], aim = 0.
@@ -30,7 +29,7 @@ console.log('Solution of day 02, first exercise is: ' + getMultiplicationOfFinal
     down 5 adds 5 to aim
     up 5 removes 5 from aim
 */
-function getMultiplicationOfFinalPositionOfSubmarine2(listOfMovements) {
+function getPositionOfTheSubmarineWithAiming(listOfMovements) {
     let pos = [0, 0];
     let aim = 0;
     for (let i = 0; i < listOfMovements.length; i++) {
@@ -48,7 +47,13 @@ function getMultiplicationOfFinalPositionOfSubmarine2(listOfMovements) {
     }
     return pos[0] * pos[1];
 }
-console.log('Solution of day 02, second exercise is: ' + getMultiplicationOfFinalPositionOfSubmarine2(input));
 
-exports.getMultiplicationOfFinalPositionOfSubmarine = getMultiplicationOfFinalPositionOfSubmarine;
-exports.getMultiplicationOfFinalPositionOfSubmarine2 = getMultiplicationOfFinalPositionOfSubmarine2;
+/* istanbul ignore next */
+/*****************************************
+ * Uncomment this to get the solutions.  *
+ *****************************************/
+// console.log('Solution of day 02, first exercise is: ' + getPositionOfTheSubmarine(input));
+// console.log('Solution of day 02, second exercise is: ' + getPositionOfTheSubmarineWithAiming(input));
+
+exports.getPositionOfTheSubmarine = getPositionOfTheSubmarine;
+exports.getPositionOfTheSubmarineWithAiming = getPositionOfTheSubmarineWithAiming;

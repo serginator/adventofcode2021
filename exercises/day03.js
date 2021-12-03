@@ -66,8 +66,6 @@ function getPowerConsumption(arr) {
     return getDecimalCode(getGammaRate(arr)) * getDecimalCode(getEpsilonRate(arr));
 }
 
-console.log('Solution of day 03, first exercise is: ' + getPowerConsumption(input));
-
 /**
  * Determine the most common value (0 or 1) in the current bit position,
  * and keep only numbers with that bit in that position. If 0 and 1 are equally
@@ -141,7 +139,11 @@ function getLifeSupportRating(arr) {
     return getDecimalCode(getOxygenGeneratorRating(arr)) * getDecimalCode(getCO2ScrubberRating(arr));
 }
 
-console.log('Solution of day 03, second exercise is: ' + getLifeSupportRating(input));
+/*****************************************
+ * Uncomment this to get the solutions.  *
+ *****************************************/
+// console.log('Solution of day 03, first exercise is: ' + getPowerConsumption(input));
+// console.log('Solution of day 03, second exercise is: ' + getLifeSupportRating(input));
 
 exports.getGammaRate = getGammaRate;
 exports.getEpsilonRate = getEpsilonRate;

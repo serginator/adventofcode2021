@@ -6,7 +6,7 @@ To execute them, just run:
 npm install
 npm test
 ```
-It will test the methods and return the results as logs.
+It will test the methods. To see the results just uncomment the console.logs in the files.
 
 To watch coverage, after `npm test` run `npm serve`and go to http://localhost:8000
 

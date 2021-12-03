@@ -13,22 +13,22 @@ function numberOfIncrements(arr) {
     }
     return count;
 }
-console.log('Solution of day 01, first exercise is: ' + numberOfIncrements(input));
 
-
-/* having the following tags
-1. 607 A
-2. 618 A B
-3. 618 A B C
-4. 617   B C D
-5. 647     C D E
-6. 716       D E F
-7. 769         E F G
-8. 792           F G H
-if the sum of the three A's is lower than the sum of the three B's, it's an increment.
-return the increments.
+/**
+ * Having the following tags
+ * 1. 607 A
+ * 2. 618 A B
+ * 3. 618 A B C
+ * 4. 617   B C D
+ * 5. 647     C D E
+ * 6. 716       D E F
+ * 7. 769         E F G
+ * 8. 792           F G H
+ *
+ * if the sum of the three A's is lower than the sum of the three B's, it's an increment.
+ * return the increments.
 */
-function numberOfIncrements2(arr) {
+function numberOfIncrementsByGroupsOfThree(arr) {
     var count = 0;
     for (var i = 1; i < arr.length; i++) {
         if (arr[i+2]) {
@@ -39,7 +39,13 @@ function numberOfIncrements2(arr) {
     }
     return count;
 };
-console.log('Solution of day 01, second exercise is: ' + numberOfIncrements2(input));
+
+/* istanbul ignore next */
+/*****************************************
+ * Uncomment this to get the solutions.  *
+ *****************************************/
+// console.log('Solution of day 01, first exercise is: ' + numberOfIncrements(input));
+// console.log('Solution of day 01, second exercise is: ' + numberOfIncrementsByGroupsOfThree(input));
 
 exports.numberOfIncrements = numberOfIncrements;
-exports.numberOfIncrements2 = numberOfIncrements2;
+exports.numberOfIncrementsByGroupsOfThree = numberOfIncrementsByGroupsOfThree;
