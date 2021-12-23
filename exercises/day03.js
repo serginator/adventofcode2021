@@ -1,4 +1,4 @@
-// AdventOfCode day 2
+// AdventOfCode day 3
 
 const input = require('../inputs/day03.input').input;
 

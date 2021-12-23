@@ -14,3 +14,4 @@ To watch coverage, after `npm test` run `npm serve`and go to http://localhost:80
 * [Day 01 - Sonar Sweep](https://adventofcode.com/2021/day/1) - [Result](exercises/day01.js)
 * [Day 02 - Dive!](https://adventofcode.com/2021/day/2) - [Result](exercises/day02.js)
 * [Day 03 - Binary Diagnostic](https://adventofcode.com/2021/day/3) - [Result](exercises/day03.js)
+* [Day 04 - Giant Squid](https://adventofcode.com/2021/day/4) - [Result](exercises/day04.js)
